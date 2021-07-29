@@ -1,64 +1,148 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <title><%= title %></title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <link rel='stylesheet' href='/stylesheets/style.css' />
-</head>
+<%- include('partials/header') %>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <span>
-      <a href="#"><img class="img-fluid" src="/images/eprojects_full_logo_bg_blue.png"></img></a>
-    </span>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto justify-content-center">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Events</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Newsletter</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
 
 
-  <div class="container">
-    <div class="row">
-      <div class="title-text">
-        An Interdisciplinary Hub for Entrepreneurship + Innovation
+  <%- include('partials/navbar') %>
+
+  <section id="main">
+    <div class="container" id="main">
+      <div class="row">
+        <div class="title-text" style="max-width:700px">
+          An Interdisciplinary Hub for
+          <p style="font-weight:700">Entrepreneurship + Innovation</p>
+        </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <div class="subtitle" style="max-width:700px">
+          Whether you are a thriving student-entrepreneur, or <br> want to learn more about entrepreneurship, you've come to the right place.
+        </div>
       </div>
-      <div class="description">
-        Whether you are a thriving student-entrepreneur, or want to learn more about entrepreneurship, you've come to the right place.
-      </div>
-      <div class="image-front">
-        <img src="/images/eprojectsjanet.png" alt="">
-      </div>
-      <div class="image-back">
-        <img src="/images/Asset_2.png" alt="">
+      <br>
+      <div class="row">
+        <button type="button" class="btn btn-light">JOIN US</button>
       </div>
     </div>
+    <div id="bottom-rectangle">
+    </div>
+    <div id="right-trapezoid">
+
+    </div>
+  </section>
 
 
-  </div>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="title-text">
+          We are eProjects
+        </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <div class="description">
+          Whether you are a thriving student-entrepreneur, or want to learn more about entrepreneurship, you've come to the right place.
+        </div>
+      </div>
+      <br></br>
+      <br></br>
+
+      <div class="row">
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./images/learn_card.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Learn</h5>
+              <p class="card-text">We help students learn from some of Vancouver’s most successful entrepreneurs, allowing you to hear their successes and failures.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./images/connect_card.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Connect</h5>
+              <p class="card-text">We connect you with like-minded, passionate students to learn about relevant entrepreneurial skills used in the industry today.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./images/innovate_card.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Innovate</h5>
+              <p class="card-text">We bring your ideas to life by providing you with the tools needed to succeed, all the while giving guidance when needed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="events">
+    <div class="container">
+      <div class="row">
+        <div class="title-text">
+          Events
+        </div>
+        <div class="description">
+          eProjects is always working on new events, but some of our favourite events in the past years are:
+        </div>
+      </div>
+      <br></br>
+      <br></br>
+      <div class="row event-row">
+        <div class="col-6">
+          <img src="./images/placeholder.png" style="max-height:210px;" alt="lite hack images">
+        </div>
+        <div class="col-6">
+          <div class="event-title">
+            LiteHack
+          </div>
+          <div class="event-description">
+            <p>The code-free hackathon designed to help your fresh ideas take center stage.</p>
+            <p>LiteHacks is a full day of fast paced challenges and activities, fueled by your passion and forward thinking. No coding experience required!</p>
+          </div>
+        </div>
+      </div>
+      <div class="row event-row">
+        <div class="col-6">
+          <div class="event-title">
+            CEO Dinner Night
+          </div>
+          <div class="event-description">
+            <p>The code-free hackathon designed to help your fresh ideas take center stage.</p>
+          </div>
+        </div>
+        <div class="col-6">
+          <img src="./images/placeholder.png" style="max-height:210px;" alt="lite hack images">
+        </div>
+      </div>
+      <div class="row event-row">
+        <div class="col-6">
+          <img src="./images/placeholder.png" style="max-height:210px;" alt="lite hack images">
+        </div>
+        <div class="col-6">
+          <div class="event-title">
+            eTalks
+          </div>
+          <div class="event-description">
+            <p>Join us for a night of refreshments, and the opportunity to engage with a start up, or to listen to a CEO life-story.</p>
+            <p>We cover topics like the fashion industry, and the innovation in the restaurant scene in Vancouver. </p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <%- include('partials/footer') %>
+
 </body>
 
 </html>
