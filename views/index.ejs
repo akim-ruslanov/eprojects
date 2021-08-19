@@ -1,12 +1,11 @@
 <%- include('partials/header') %>
 
-<body>
 
 
   <%- include('partials/navbar') %>
 
   <section id="main">
-    <div class="container" id="main">
+    <div class="container" id="main" style="margin-left:6vw">
       <div class="row">
         <div class="title-text" style="max-width:700px">
           An Interdisciplinary Hub for
@@ -23,19 +22,18 @@
       <div class="row">
         <button type="button" class="btn btn-light">JOIN US</button>
       </div>
+      <div id="wave" style="overflow:hidden;">
+        <%- include('partials/wave') %>
+      </div>
     </div>
-    <div id="bottom-rectangle">
-    </div>
-    <div id="right-trapezoid">
 
-    </div>
   </section>
 
 
 
   <section id="about">
     <div class="container">
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="title-text">
           We are eProjects
         </div>
@@ -49,7 +47,7 @@
       <br></br>
       <br></br>
 
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="col-4">
           <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="./images/learn_card.png" alt="Card image cap">
@@ -90,6 +88,9 @@
         <div class="title-text">
           Events
         </div>
+      </div>
+      <div class="row">
+
         <div class="description">
           eProjects is always working on new events, but some of our favourite events in the past years are:
         </div>
@@ -98,7 +99,9 @@
       <br></br>
       <div class="row event-row">
         <div class="col-6">
-          <img src="./images/placeholder.png" style="max-height:210px;" alt="lite hack images">
+          <div class="event-image-container text-center mx-auto">
+            <img src="./images/lite_hacks.png" class="event-image img-fluid" style="margin-top: 35px;" alt="lite hack images">
+          </div>
         </div>
         <div class="col-6">
           <div class="event-title">
@@ -120,12 +123,16 @@
           </div>
         </div>
         <div class="col-6">
-          <img src="./images/placeholder.png" style="max-height:210px;" alt="lite hack images">
+          <div class="event-image-container text-center mx-auto">
+            <img src="./images/ceo_dinner_night.png" class="event-image img-fluid" style="margin-top: 26px;" alt="lite hack images">
+          </div>
         </div>
       </div>
       <div class="row event-row">
         <div class="col-6">
-          <img src="./images/placeholder.png" style="max-height:210px;" alt="lite hack images">
+          <div class="event-image-container text-center mx-auto">
+            <img src="./images/etalks.png" class="event-image img-fluid" style="margin-top: 55px;" alt="lite hack images">
+          </div>
         </div>
         <div class="col-6">
           <div class="event-title">
@@ -138,11 +145,6 @@
         </div>
         </div>
       </div>
-    </div>
   </section>
 
   <%- include('partials/footer') %>
-
-</body>
-
-</html>
